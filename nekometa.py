@@ -56,10 +56,10 @@ async def on_message(message):
         if 'oof' in message.content:
             await bot.send_message(message.channel, 'Oof^^')
         if 'OwO' in message.content:
+            if message.author.id == '502521437496803359':
+                await bot.send_message(message.channel, 'OwO master~')
             if message.author.id == '411715164228812801':
                 await bot.send_message(message.channel, 'u.u miu^^')
-            else:
-                await bot.send_message(message.channel, 'u.u senpai:p')
         if 'Oof' in message.content:
             await bot.send_message(message.channel, 'Oof^^')
         if message.content.startswith('Gay'):
