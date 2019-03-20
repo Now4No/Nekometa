@@ -49,7 +49,10 @@ async def help(ctx):
 async def on_message(message):
     if bot.user.id != message.author.id:
         if 'UwU' in message.content:
-            await bot.send_message(message.channel, 'uwu :p')
+            if message.author.id == '411715164228812801':
+                await bot.send_message(message.channel, 'hewo miuu:3')
+            else:
+                await bot.send_message(message.channel, 'OwO senpai:p')
         if 'oof' in message.content:
             await bot.send_message(message.channel, 'Oof^^')
         if 'OwO' in message.content:
